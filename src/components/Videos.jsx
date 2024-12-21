@@ -40,6 +40,7 @@ function Videos(){
     if (error) return <p className="text-3xl mt-20 text-center">error:{error}</p>
     return(
         <div>
+            <h1 className="text-2xl text-center">Welcome to <span className="bg-gradient-r from-[blue] to-[green] bg-clip-text text-transparent text-semibold">Vidube</span></h1>
             <div className="flex gap-2 justify-center my-10">
                 <input onChange={inputQuery} type="text" placeholder="search" className="p-2 rounded-full border-2 border-gray-400 focus:border-blue-500 bg-[#bfeeed9a] focus:bg-[#dad8d8]  transition-all outline-none"/>
                 <button onClick={search} className="bg-blue-300 size-10 flex justify-center items-center rounded-full hover:shadow-[0_0_10px_1px_blue] transition-all active:scale-95"><Icon icon={srchIcon}/></button>
